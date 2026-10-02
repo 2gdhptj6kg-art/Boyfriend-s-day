@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Onye 💙</title>
+<style>
+body{margin:0;background:#dbeafe;font-family:Georgia;text-align:center;color:#18324a}
+main{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.card{background:white;padding:30px;border-radius:25px;max-width:500px;box-shadow:0 10px 30px #9bb}
+button{background:#2563eb;color:white;border:0;padding:13px 25px;border-radius:25px;font-size:16px}
+.hide{display:none}p{font-size:18px;line-height:1.6}
+</style>
+</head>
+<body>
+<main>
+<div class="card">
+<div id="one">
+<h1>Hey Onye 💙</h1>
+<p>I made something little for you.</p>
+<button onclick="show(2)">Open it 💌</button>
+</div>
+
+<div id="two" class="hide">
+<h1>Happy Boyfriend's Day, baby ❤️</h1>
+<p>I love your face, I love you, and honestly I love everything about you.</p>
+<button onclick="show(3)">Keep going →</button>
+</div>
+
+<div id="three" class="hide">
+<h2>One memory I'll never forget 🥹</h2>
+<p>The first day we met.</p>
+<p>I didn't know that day would become part of our story, but I'm so glad it did.</p>
+<button onclick="show(4)">Our songs 🎶</button>
+</div>
+
+<div id="four" class="hide">
+<h2>Our little soundtrack 🎶</h2>
+<p>💙 Sure Thing — Miguel</p>
+<p>💙 Perfect — Ed Sheeran</p>
+<button onclick="show(5)">One last thing →</button>
+</div>
+
+<div id="five" class="hide">
+<h1>For you, Onyekachi 💙</h1>
+<p>I hope you know how special you are to me.</p>
+<p>Happy Boyfriend's Day, baby. ❤️</p>
+<p>And yes... your actual gift is coming 😂</p>
+<p>My bank account is currently going through character development. 😭</p>
+<p>— Yours 💙</p>
+</div>
+</div>
+</main>
+
+<script>
+function show(n){
+for(let i=1;i<=5;i++)document.getElementById(["one","two","three","four","five"][i-1]).className="hide";
+document.getElementById(["one","two","three","four","five"][n-1]).className="";
+}
+</script>
+</body>
+</html>
